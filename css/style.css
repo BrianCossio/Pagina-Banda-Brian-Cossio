@@ -1,0 +1,794 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* **************Clases que se repiten en todos los html*********** */
+body {
+    height: auto;
+    width: 100%;
+    background-image: url("../assets/images/Fondo.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+nav ul {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+li a {
+    text-decoration: none;
+    color: #e5d6c2;
+    padding: 7px;
+    background-color: #1d1d1b;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+#estilo_titulo_principal {
+    color: #1d1d1b;
+    font-family: 'Anek Telugu', sans-serif;
+    font-weight: 500;
+    font-weight: bolder;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.fondo_header {
+    background-color: #e5d6c2;
+    display: flex;
+    flex-direction: column;
+}
+
+.estilo_texto_2 {
+    color: #1d1d1b;
+    font-family: 'Anek Telugu', sans-serif;
+
+}
+
+.contactos_footer {
+    text-decoration: none;
+    color: #1d1d1b;
+    font-family: 'Anek Telugu', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.fondo_footer {
+    background-color: #e5d6c2;
+    display: flex;
+}
+
+footer a {
+    text-decoration: none;
+    color: #1d1d1b;
+    font-family: 'Anek Telugu', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px;
+}
+
+footer h3 {
+    color: #1d1d1b;
+    font-family: 'Anek Telugu', sans-serif;
+    text-decoration: underline;
+    margin-top: 25px;
+}
+
+/* ******************************************************* */
+/* *****************Grilla index************************** */
+#estructura_grilla_index {
+    display: grid;
+    grid-template-rows: 0.5fr 3fr 3fr 0.5fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+}
+
+#header_index {
+    grid-area: header;
+
+}
+
+#main_index {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "sectind1 sectind3"
+        "sectind4 sectind2";
+}
+
+#footer_index {
+    grid-area: footer;
+}
+
+
+/* ********************elementos del main******************** */
+#section_index_1 {
+    grid-area: sectind1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#section_index_1 div p {
+    border: 5px solid #e5d6c2;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    color: #e5d6c2;
+    font-family: 'Anek Telugu', sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#section_index_2 {
+    grid-area: sectind2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section_index_2 div p {
+    border: 5px solid #e5d6c2;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    color: #e5d6c2;
+    font-family: 'Anek Telugu', sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+#section_index_3 {
+    grid-area: sectind3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section_index_3 div {
+    padding: 30px;
+}
+
+#section_index_4 {
+    grid-area: sectind4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section_index_4 div {
+    padding: 30px;
+}
+
+/* ************************Media queries mobile Index***************************/
+@media only screen and (max-width: 768px) {
+    #estructura_grilla_index {
+        grid-template-rows: 0.1fr 3fr 3fr 0.1fr;
+    }
+
+    #main_index {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: "sectind1"
+            "sectind3"
+            "sectind2"
+            "sectind4";
+    }
+
+    nav ul {
+        margin-top: 50px;
+        justify-content: space-around;
+        /* }
+#section_index_1 {
+    width: 50vh;
+    justify-content: start;
+    align-items: flex-start;
+}
+#section_index_1 div p {
+    border: none;
+} */
+    }
+
+    #section_index_3 div iframe {
+        width: 700px;
+        height: 350px;
+    }
+
+    #section_index_3 {
+        justify-content: start;
+        align-items: flex-start;
+    }
+
+    #section_index_3 div {
+        padding: 10px;
+    }
+
+    #section_index_4 div img {
+
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        width: 60vh;
+
+    }
+}
+
+/* ****************************************************************** */
+/* *****************Grilla Historia************************** */
+#estructura_grilla_historia {
+    display: grid;
+    grid-template-rows: 0.5fr 3fr 3fr 0.5fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "headerhistoria headerhistoria headerhistoria"
+        "mainhistoria mainhistoria mainhistoria"
+        "mainhistoria mainhistoria mainhistoria"
+        "footerhistoria footerhistoria footerhistoria";
+}
+
+#header_historia {
+    grid-area: headerhistoria;
+
+}
+
+#main_historia {
+    grid-area: mainhistoria;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "secttex1 sectimg1"
+        "secttex2 sectimg2"
+        "sectteximg3 sectteximg4";
+}
+
+/* ***********elementos main Historia********** */
+#section_texto_1 {
+    grid-area: secttex1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section_texto_1 div {
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    color: #e5d6c2;
+    font-family: 'Anek Telugu', sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#section_img_1 {
+    grid-area: sectimg1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#section_img_1 div img {
+    padding: 10px 10px 10px 10px;
+}
+
+#section_texto_2 {
+    grid-area: secttex2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section_texto_2 div {
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    color: #e5d6c2;
+    font-family: 'Anek Telugu', sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#section_img_2 {
+    grid-area: sectimg2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#section_img_2 div img {
+    padding: 10px 10px 10px 10px;
+}
+
+#section_tex_img_3 {
+    grid-area: sectteximg3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto3 {
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    color: #e5d6c2;
+    font-family: 'Anek Telugu', sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#section_tex_img_3 div img {
+    padding: 10px 10px 10px 10px;
+}
+
+#section_tex_img_4 {
+    grid-area: sectteximg4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto4 {
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    color: #e5d6c2;
+    font-family: 'Anek Telugu', sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#section_tex_img_4 div img {
+    padding: 10px 10px 10px 10px;
+}
+
+
+/* ************************************************ */
+
+
+#footer_historia {
+    grid-area: footerhistoria;
+}
+
+/* **********************Media queries mobile Historia*********************** */
+@media only screen and (max-width: 768px) {
+    #estructura_grilla_historia {
+        grid-template-rows: 0.1fr 3fr 3fr 0.1fr;
+    }
+
+    #main_historia {
+        grid-template-rows: repeat(4, 1fr) repeat(2, 2fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: "secttex1"
+            "sectimg1"
+            "secttex2"
+            "sectimg2"
+            "sectteximg3"
+            "sectteximg4";
+    }
+
+    nav ul {
+        margin-top: 50px;
+        justify-content: space-around;
+    }
+
+    #section_tex_img_3 {
+        flex-direction: column;
+    }
+
+    #section_tex_img_4 {
+        flex-direction: column;
+    }
+}
+
+/* *********************Grilla Discografia********************** */
+#estructura_grilla_discografia {
+    display: grid;
+    grid-template-rows: 0.3fr 3fr 3fr 0.3fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+}
+
+#header_discografia {
+    grid-area: header;
+
+}
+
+#main_discografia {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "divalb1 ullist1 divvid1"
+        "divalb2 ullist2 divvid2"
+        "divalb3 ullist3 divvid3"
+        "divalb4 ullist4 divvid4"
+        "divalb5 ullist5 divvid5"
+        "divalb6 ullist6 divvid6"
+        "divalb7 ullist7 divvid7";
+}
+
+/* ******************elementos grilla main discografia********* */
+
+/* ********portadas album******** */
+#div_album_1 {
+    grid-area: divalb1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#div_album_1 h2 {
+    color: #e5d6c2;
+    font-family: 'Anek Telugu', sans-serif;
+}
+
+#div_album_2 {
+    grid-area: divalb2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#div_album_2 h2 {
+    color: #e5d6c2;
+    font-family: 'Anek Telugu', sans-serif;
+}
+
+#div_album_3 {
+    grid-area: divalb3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#div_album_3 h2 {
+    color: #e5d6c2;
+    font-family: 'Anek Telugu', sans-serif;
+}
+
+#div_album_4 {
+    grid-area: divalb4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#div_album_4 h2 {
+    color: #e5d6c2;
+    font-family: 'Anek Telugu', sans-serif;
+}
+
+#div_album_5 {
+    grid-area: divalb5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#div_album_5 h2 {
+    color: #e5d6c2;
+    font-family: 'Anek Telugu', sans-serif;
+}
+
+#div_album_6 {
+    grid-area: divalb6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#div_album_6 h2 {
+    color: #e5d6c2;
+    font-family: 'Anek Telugu', sans-serif;
+}
+
+#div_album_7 {
+    grid-area: divalb7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#div_album_7 h2 {
+    color: #e5d6c2;
+    font-family: 'Anek Telugu', sans-serif;
+}
+
+
+/* *********song list******** */
+#ul_lista_1 {
+    grid-area: ullist1;
+}
+
+#ul_lista_2 {
+    grid-area: ullist2;
+}
+
+#ul_lista_3 {
+    grid-area: ullist3;
+}
+
+#ul_lista_4 {
+    grid-area: ullist4;
+}
+
+#ul_lista_5 {
+    grid-area: ullist5;
+}
+
+#ul_lista_6 {
+    grid-area: ullist6;
+}
+
+#ul_lista_7 {
+    grid-area: ullist7;
+}
+
+/* *********videos******** */
+#div_video_1 {
+    grid-area: divvid1;
+}
+
+#div_video_2 {
+    grid-area: divvid2;
+}
+
+#div_video_3 {
+    grid-area: divvid3;
+}
+
+#div_video_4 {
+    grid-area: divvid4;
+}
+
+#div_video_5 {
+    grid-area: divvid5;
+}
+
+#div_video_6 {
+    grid-area: divvid6;
+}
+
+#div_video_7 {
+    grid-area: divvid7;
+}
+
+
+
+
+
+
+
+
+
+
+#footer_discografia {
+    grid-area: footer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .estilo_titulo_Discografia_1 {
+    color: #e5d6c2;
+    font-family: 'Anek Telugu', sans-serif;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.caja_imagen_disco {
+    margin-left: 10px;
+    padding: 10px;
+    padding-bottom: 90px;
+}
+
+.estilo_lista_canciones_1 {
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: solid #e5d6c2;
+    ;
+    font-family: 'Anek Telugu', sans-serif;
+    color: #e5d6c2;
+    position: absolute;
+    top: 180px;
+    left: 33%;
+    padding: 5px;
+}
+
+.estilo_lista_canciones_2 {
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: solid #e5d6c2;
+    ;
+    font-family: 'Anek Telugu', sans-serif;
+    color: #e5d6c2;
+    position: absolute;
+    top: 570px;
+    left: 33%;
+    padding: 5px;
+}
+
+.estilo_lista_canciones_3 {
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: solid #e5d6c2;
+    ;
+    font-family: 'Anek Telugu', sans-serif;
+    color: #e5d6c2;
+    position: absolute;
+    top: 960px;
+    left: 33%;
+    padding: 5px;
+}
+
+.estilo_lista_canciones_4 {
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: solid #e5d6c2;
+    ;
+    font-family: 'Anek Telugu', sans-serif;
+    color: #e5d6c2;
+    position: absolute;
+    top: 1350px;
+    left: 33%;
+    padding: 5px;
+}
+
+.estilo_lista_canciones_5 {
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: solid #e5d6c2;
+    ;
+    font-family: 'Anek Telugu', sans-serif;
+    color: #e5d6c2;
+    position: absolute;
+    top: 1740px;
+    left: 33%;
+    padding: 5px;
+}
+
+.estilo_lista_canciones_6 {
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: solid #e5d6c2;
+    ;
+    font-family: 'Anek Telugu', sans-serif;
+    color: #e5d6c2;
+    position: absolute;
+    top: 2130px;
+    left: 33%;
+    padding: 5px;
+}
+
+.estilo_lista_canciones_7 {
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: solid #e5d6c2;
+    ;
+    font-family: 'Anek Telugu', sans-serif;
+    color: #e5d6c2;
+    position: absolute;
+    top: 2520px;
+    left: 33%;
+    padding: 5px;
+}
+
+.video_disco_1 {
+    position: absolute;
+    top: 180px;
+    right: 4%;
+}
+
+.video_disco_2 {
+    position: absolute;
+    top: 570px;
+    right: 4%;
+}
+
+.video_disco_3 {
+    position: absolute;
+    top: 960px;
+    right: 4%;
+}
+
+.video_disco_4 {
+    position: absolute;
+    top: 1350px;
+    right: 4%;
+}
+
+.video_disco_5 {
+    position: absolute;
+    top: 1740px;
+    right: 4%;
+}
+
+.video_disco_6 {
+    position: absolute;
+    top: 2130px;
+    right: 4%;
+}
+
+.video_disco_7 {
+    position: absolute;
+    top: 2520px;
+    right: 4%;
+} */
+
+/* ************************************************ */
+/* *******************Clases Eventos********************** */
+.titulo_eventos {
+    color: #e5d6c2;
+    font-family: 'Anek Telugu', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.estilo_tabla_eventos {
+    position: relative;
+    left: 28%;
+    color: #e5d6c2;
+    font-family: 'Anek Telugu', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-spacing: 40px;
+    border: solid #e5d6c2;
+    margin-bottom: 100px;
+}
+
+.estilo_titulos_columnas {
+    font-size: 2.2rem;
+    text-decoration: underline;
+}
+
+/* ******************************************************** */
+/* ***************Clases Contacto***************** */
+.estilo_fieldset {
+    display: inline-block;
+    border: none;
+    padding: 10px;
+    color: #e5d6c2;
+    font-family: 'Anek Telugu', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 25px;
+
+}
+
+/* *****************************************************************
+ 
