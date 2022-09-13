@@ -99,6 +99,7 @@ footer h3 {
 #footer_index {
     grid-area: footer;
 }
+
 #main_index {
     grid-area: main;
     display: grid;
@@ -235,6 +236,7 @@ footer h3 {
     grid-area: headerhistoria;
 
 }
+
 #footer_historia {
     grid-area: footerhistoria;
 }
@@ -395,7 +397,7 @@ footer h3 {
 }
 
 #footer_discografia {
-        grid-area: footer;
+    grid-area: footer;
 }
 
 
@@ -483,7 +485,7 @@ footer h3 {
     align-items: center;
     justify-content: center;
     color: #e5d6c2;
-    font-family: 'Anek Telugu', sans-serif;  
+    font-family: 'Anek Telugu', sans-serif;
 }
 
 
@@ -631,7 +633,7 @@ footer h3 {
 
 /* ************************************************ */
 /* *******************Clases Eventos********************** */
-.titulo_eventos {
+/* .titulo_eventos {
     color: #e5d6c2;
     font-family: 'Anek Telugu', sans-serif;
     font-size: 3rem;
@@ -656,9 +658,65 @@ footer h3 {
 .estilo_titulos_columnas {
     font-size: 2.2rem;
     text-decoration: underline;
-}
+} */
 
 /* ******************************************************** */
+/* ******************Grilla Eventos******************* */
+#estructura_grilla_eventos {
+    display: grid;
+    grid-template-rows: 0.5fr 3fr 3fr 0.5fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+}
+
+#header_eventos {
+    grid-area: header;
+
+}
+
+#footer_eventos {
+    grid-area: footer;
+}
+
+#main_eventos {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "secttabla"
+}
+
+/* ***************Elementos grilla Main Eventos*******************/
+#secttabla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#secttabla table {
+    font-family: 'Anek Telugu', sans-serif;
+    color: #e5d6c2;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-spacing: 40px;
+    border: solid #e5d6c2;
+    margin: 50px;
+    text-align: center;
+}
+
+#titulo_tabla {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+#primer_fila_titulos {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
 /* ***************Clases Contacto***************** */
 .estilo_fieldset {
     display: inline-block;
