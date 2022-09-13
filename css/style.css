@@ -631,36 +631,41 @@ footer h3 {
     justify-content: center;
 }
 
+/* ********************media queries mobile dicografia************** */
+@media only screen and (max-width: 768px) {
+    #estructura_grilla_discografia {
+        grid-template-rows: 0.1fr 3fr 3fr 0.1fr;
+    }
+
+    #main_discografia {
+        grid-template-rows: repeat(14, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: "divalb1"
+            "ullist1"
+            "divvid1"
+            "divalb2"
+            "ullist2"
+            "divvid2"
+            "divalb3"
+            "ullist3"
+            "divvid3"
+            "divalb4"
+            "ullist4"
+            "divvid4"
+            "divalb5"
+            "ullist5"
+            "divvid5"
+            "divalb6"
+            "ullist6"
+            "divvid6"
+            "divalb7"
+            "ullist7"
+            "divvid7";
+
+    }
+}
+
 /* ************************************************ */
-/* *******************Clases Eventos********************** */
-/* .titulo_eventos {
-    color: #e5d6c2;
-    font-family: 'Anek Telugu', sans-serif;
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 100px;
-
-}
-
-.estilo_tabla_eventos {
-    position: relative;
-    left: 28%;
-    color: #e5d6c2;
-    font-family: 'Anek Telugu', sans-serif;
-    text-align: center;
-    font-size: 1.5rem;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-spacing: 40px;
-    border: solid #e5d6c2;
-    margin-bottom: 100px;
-}
-
-.estilo_titulos_columnas {
-    font-size: 2.2rem;
-    text-decoration: underline;
-} */
-
-/* ******************************************************** */
 /* ******************Grilla Eventos******************* */
 #estructura_grilla_eventos {
     display: grid;
@@ -718,6 +723,23 @@ footer h3 {
 }
 
 /* ********************************************************** */
+/* ********************media queries mobile eventos************** */
+@media only screen and (max-width: 768px) {
+    #secttabla table {
+        font-size: 1.2rem;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #secttabla table {
+        font-size: 1.2rem;
+        margin: 10px;
+        border-spacing: 25px;
+    }
+}
+
+/* ******************************************************** */
 /* ******************grilla Contactos********************** */
 #estructura_grilla_contactos {
     display: grid;
@@ -768,4 +790,15 @@ footer h3 {
 }
 
 /* *****************************************************************
- 
+/* ********************media queries mobile eventos************** */
+@media only screen and (max-width: 768px) {
+    #sectform fieldset {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #estructura_grilla_eventos {
+        grid-template-rows: 0.1fr 3fr 3fr 0.1fr;
+    }
+}
