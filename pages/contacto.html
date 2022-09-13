@@ -13,9 +13,9 @@
     <title>Document</title>
 </head>
 
-<body>
+<body id="estructura_grilla_contactos">
 
-    <header class="fondo_header">
+    <header id="header_contactos" class="fondo_header">
         <h1 id="estilo_titulo_principal">Arctic Monkeys</h1>
         <!-- menu de enlaces -->
         <nav class="estilo_texto_2">
@@ -33,55 +33,58 @@
     </header>
 
 
-    <main>
-        <fieldset class="estilo_fieldset">
-            <H1>Contacto</H1>
-            <form action="" method="post">
-                <div>
-                    <label for="nombre">Ingrese Nombre</label>
-                    <input type="text" id="nombre" placeholder="Nombre">
-                </div>
-                <br>
-                <div>
-                    <label for="apellido">Ingrese Apellido</label>
-                    <input type="text" id="apellido" placeholder="Apellido">
-                </div>
-                <br>
-                <div>
-                    <label for="mail">Ingrese su email</label>
-                    <input type="email" id="mail" placeholder="ejemplo@gmail.com">
-                </div>
-                <br>
-                <div>
-                    <label for="celular">Ingrese su número Celular</label>
-                    <input type="number" id="celular" placeholder="Ej: 1133445577">
-                </div>
-                <br>
-                <div>
-                    <label for="genero">Género</label>
-                    <select name="Genero" id="">
-                        <option value="GenMasculino">Masculino</option>
-                        <option value="GenFemenino">Femenino</option>
-
-                    </select>
-                </div>
-                <br>
-                <div>
-                    Comentarios:
+    <main id="main_contactos">
+        <section id="sectform">
+            <fieldset>
+                <h1>Contacto</h1>
+                <form action="" method="post">
+                    <div>
+                        <label for="nombre">Ingrese Nombre</label>
+                        <input type="text" id="nombre" placeholder="Nombre">
+                    </div>
                     <br>
-                    <textarea name="coment" id="" cols="30" rows="10"></textarea>
-                </div>
+                    <div>
+                        <label for="apellido">Ingrese Apellido</label>
+                        <input type="text" id="apellido" placeholder="Apellido">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="mail">Ingrese su email</label>
+                        <input type="email" id="mail" placeholder="ejemplo@gmail.com">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="celular">Ingrese su número Celular</label>
+                        <input type="number" id="celular" placeholder="Ej: 1133445577">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="genero">Género</label>
+                        <select name="Genero" id="">
+                            <option value="GenMasculino">Masculino</option>
+                            <option value="GenFemenino">Femenino</option>
 
-                <input id="reset" type="reset" value="Limpiar Formulario">
-                <input id="enviar" type="submit" value="Enviar">
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        Comentarios:
+                        <br>
+                        <textarea name="coment" id="" cols="30" rows="10"></textarea>
+                    </div>
 
-            </form>
-        </fieldset>
+                    <input id="reset" type="reset" value="Limpiar Formulario">
+                    <input id="enviar" type="submit" value="Enviar">
+
+                </form>
+            </fieldset>
+        </section>
+
 
     </main>
 
 
-    <footer class="fondo_footer">
+    <footer id="footer_contactos" class="fondo_footer">
 
         <img src="../assets/images/arctic-monkeys-am-do-i-wanna-know-phonograph-record-album-others-f57314692862fe7a6a624a3c0d455d4b (1) (1).png"
             alt="logo">

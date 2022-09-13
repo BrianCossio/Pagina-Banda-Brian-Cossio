@@ -717,18 +717,54 @@ footer h3 {
     text-decoration: underline;
 }
 
-/* ***************Clases Contacto***************** */
-.estilo_fieldset {
-    display: inline-block;
-    border: none;
-    padding: 10px;
-    color: #e5d6c2;
+/* ********************************************************** */
+/* ******************grilla Contactos********************** */
+#estructura_grilla_contactos {
+    display: grid;
+    grid-template-rows: 0.5fr 3fr 3fr 0.5fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+}
+
+#header_contactos {
+    grid-area: header;
+
+}
+
+#footer_contactos {
+    grid-area: footer;
+}
+
+#main_contactos {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "sectform"
+}
+
+/* ****************elementos grilla main contactos************* */
+#sectform {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#sectform fieldset {
+    padding: 5px;
+    margin: 5px;
     font-family: 'Anek Telugu', sans-serif;
     font-size: 1.5rem;
-    margin-top: 30px;
+    color: #e5d6c2;
     background-color: rgba(0, 0, 0, 0.8);
-    margin-bottom: 25px;
+    border: none;
+}
 
+#sectform fieldset form div {
+    margin-bottom: 15px;
 }
 
 /* *****************************************************************
