@@ -96,6 +96,9 @@ footer h3 {
 
 }
 
+#footer_index {
+    grid-area: footer;
+}
 #main_index {
     grid-area: main;
     display: grid;
@@ -103,10 +106,6 @@ footer h3 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "sectind1 sectind3"
         "sectind4 sectind2";
-}
-
-#footer_index {
-    grid-area: footer;
 }
 
 
@@ -236,6 +235,10 @@ footer h3 {
     grid-area: headerhistoria;
 
 }
+#footer_historia {
+    grid-area: footerhistoria;
+}
+
 
 #main_historia {
     grid-area: mainhistoria;
@@ -345,11 +348,6 @@ footer h3 {
 
 /* ************************************************ */
 
-
-#footer_historia {
-    grid-area: footerhistoria;
-}
-
 /* **********************Media queries mobile Historia*********************** */
 @media only screen and (max-width: 768px) {
     #estructura_grilla_historia {
@@ -394,8 +392,12 @@ footer h3 {
 
 #header_discografia {
     grid-area: header;
-
 }
+
+#footer_discografia {
+        grid-area: footer;
+}
+
 
 #main_discografia {
     grid-area: main;
@@ -420,9 +422,6 @@ footer h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-#div_album_1 h2 {
     color: #e5d6c2;
     font-family: 'Anek Telugu', sans-serif;
 }
@@ -433,9 +432,6 @@ footer h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-#div_album_2 h2 {
     color: #e5d6c2;
     font-family: 'Anek Telugu', sans-serif;
 }
@@ -446,9 +442,6 @@ footer h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-#div_album_3 h2 {
     color: #e5d6c2;
     font-family: 'Anek Telugu', sans-serif;
 }
@@ -459,9 +452,6 @@ footer h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-#div_album_4 h2 {
     color: #e5d6c2;
     font-family: 'Anek Telugu', sans-serif;
 }
@@ -472,9 +462,6 @@ footer h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-#div_album_5 h2 {
     color: #e5d6c2;
     font-family: 'Anek Telugu', sans-serif;
 }
@@ -485,9 +472,6 @@ footer h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-#div_album_6 h2 {
     color: #e5d6c2;
     font-family: 'Anek Telugu', sans-serif;
 }
@@ -498,253 +482,152 @@ footer h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-#div_album_7 h2 {
     color: #e5d6c2;
-    font-family: 'Anek Telugu', sans-serif;
+    font-family: 'Anek Telugu', sans-serif;  
 }
 
 
 /* *********song list******** */
 #ul_lista_1 {
     grid-area: ullist1;
+    font-family: 'Anek Telugu', sans-serif;
+    color: #e5d6c2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #ul_lista_2 {
     grid-area: ullist2;
+    font-family: 'Anek Telugu', sans-serif;
+    color: #e5d6c2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #ul_lista_3 {
     grid-area: ullist3;
+    font-family: 'Anek Telugu', sans-serif;
+    color: #e5d6c2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #ul_lista_4 {
     grid-area: ullist4;
+    font-family: 'Anek Telugu', sans-serif;
+    color: #e5d6c2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #ul_lista_5 {
     grid-area: ullist5;
+    font-family: 'Anek Telugu', sans-serif;
+    color: #e5d6c2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #ul_lista_6 {
     grid-area: ullist6;
+    font-family: 'Anek Telugu', sans-serif;
+    color: #e5d6c2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #ul_lista_7 {
     grid-area: ullist7;
+    font-family: 'Anek Telugu', sans-serif;
+    color: #e5d6c2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* *********videos******** */
+/* ******************videos****************/
 #div_video_1 {
     grid-area: divvid1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #div_video_2 {
     grid-area: divvid2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #div_video_3 {
     grid-area: divvid3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #div_video_4 {
     grid-area: divvid4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #div_video_5 {
     grid-area: divvid5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #div_video_6 {
     grid-area: divvid6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #div_video_7 {
     grid-area: divvid7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
-
-
-
-
-
-
-
-
-
-#footer_discografia {
-    grid-area: footer;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .estilo_titulo_Discografia_1 {
-    color: #e5d6c2;
-    font-family: 'Anek Telugu', sans-serif;
-    font-size: 1.5rem;
-    margin-left: 10px;
-}
-
-.caja_imagen_disco {
-    margin-left: 10px;
-    padding: 10px;
-    padding-bottom: 90px;
-}
-
-.estilo_lista_canciones_1 {
-    display: inline;
-    background-color: rgba(0, 0, 0, 0.8);
-    border: solid #e5d6c2;
-    ;
-    font-family: 'Anek Telugu', sans-serif;
-    color: #e5d6c2;
-    position: absolute;
-    top: 180px;
-    left: 33%;
-    padding: 5px;
-}
-
-.estilo_lista_canciones_2 {
-    display: inline;
-    background-color: rgba(0, 0, 0, 0.8);
-    border: solid #e5d6c2;
-    ;
-    font-family: 'Anek Telugu', sans-serif;
-    color: #e5d6c2;
-    position: absolute;
-    top: 570px;
-    left: 33%;
-    padding: 5px;
-}
-
-.estilo_lista_canciones_3 {
-    display: inline;
-    background-color: rgba(0, 0, 0, 0.8);
-    border: solid #e5d6c2;
-    ;
-    font-family: 'Anek Telugu', sans-serif;
-    color: #e5d6c2;
-    position: absolute;
-    top: 960px;
-    left: 33%;
-    padding: 5px;
-}
-
-.estilo_lista_canciones_4 {
-    display: inline;
-    background-color: rgba(0, 0, 0, 0.8);
-    border: solid #e5d6c2;
-    ;
-    font-family: 'Anek Telugu', sans-serif;
-    color: #e5d6c2;
-    position: absolute;
-    top: 1350px;
-    left: 33%;
-    padding: 5px;
-}
-
-.estilo_lista_canciones_5 {
-    display: inline;
-    background-color: rgba(0, 0, 0, 0.8);
-    border: solid #e5d6c2;
-    ;
-    font-family: 'Anek Telugu', sans-serif;
-    color: #e5d6c2;
-    position: absolute;
-    top: 1740px;
-    left: 33%;
-    padding: 5px;
-}
-
-.estilo_lista_canciones_6 {
-    display: inline;
-    background-color: rgba(0, 0, 0, 0.8);
-    border: solid #e5d6c2;
-    ;
-    font-family: 'Anek Telugu', sans-serif;
-    color: #e5d6c2;
-    position: absolute;
-    top: 2130px;
-    left: 33%;
-    padding: 5px;
-}
-
-.estilo_lista_canciones_7 {
-    display: inline;
-    background-color: rgba(0, 0, 0, 0.8);
-    border: solid #e5d6c2;
-    ;
-    font-family: 'Anek Telugu', sans-serif;
-    color: #e5d6c2;
-    position: absolute;
-    top: 2520px;
-    left: 33%;
-    padding: 5px;
-}
-
-.video_disco_1 {
-    position: absolute;
-    top: 180px;
-    right: 4%;
-}
-
-.video_disco_2 {
-    position: absolute;
-    top: 570px;
-    right: 4%;
-}
-
-.video_disco_3 {
-    position: absolute;
-    top: 960px;
-    right: 4%;
-}
-
-.video_disco_4 {
-    position: absolute;
-    top: 1350px;
-    right: 4%;
-}
-
-.video_disco_5 {
-    position: absolute;
-    top: 1740px;
-    right: 4%;
-}
-
-.video_disco_6 {
-    position: absolute;
-    top: 2130px;
-    right: 4%;
-}
-
-.video_disco_7 {
-    position: absolute;
-    top: 2520px;
-    right: 4%;
-} */
 
 /* ************************************************ */
 /* *******************Clases Eventos********************** */
