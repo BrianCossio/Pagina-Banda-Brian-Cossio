@@ -45,14 +45,14 @@ footer div a:hover {
     color: white;
 }
 
-#estilo_titulo_principal {
+/* #estilo_titulo_principal {
     color: #1d1d1b;
     font-family: 'Anek Telugu', sans-serif;
     font-weight: 500;
     font-weight: bolder;
     font-size: 4rem;
     text-align: center;
-}
+} */
 
 .fondo_header {
     background-image: linear-gradient(#d1a367, #e5d6c2);
