@@ -4,8 +4,36 @@
     box-sizing: border-box;
 }
 
+#body_index_bootstrap {
+    height: auto;
+    width: 100vw;
+}
+
+#header_index {
+    height: auto;
+    width: auto;
+}
+
+#main_index {
+    height: auto;
+    width: auto;
+}
+
+#footer_index {
+    height: auto;
+    width: auto;
+}
+
+#main_index {
+    background-image: url("../assets/images/Fondo.jpeg");
+}
+
+main p {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 /* **************Clases que se repiten en todos los html*********** */
-body {
+/* body {
     height: auto;
     width: 100%;
     background-image: url("../assets/images/Fondo.jpeg");
@@ -43,7 +71,7 @@ li a:hover {
 
 footer div a:hover {
     color: white;
-}
+} */
 
 /* #estilo_titulo_principal {
     color: #1d1d1b;
@@ -54,7 +82,7 @@ footer div a:hover {
     text-align: center;
 } */
 
-.fondo_header {
+/* .fondo_header {
     background-image: linear-gradient(#d1a367, #e5d6c2);
 }
 
@@ -92,11 +120,11 @@ footer h3 {
     font-family: 'Anek Telugu', sans-serif;
     text-decoration: underline;
     margin-top: 25px;
-}
+} */
 
 /* ******************************************************* */
 /* *****************Grilla index************************** */
-#estructura_grilla_index {
+/* #estructura_grilla_index {
     display: grid;
     grid-template-rows: 0.5fr 3fr 3fr 0.5fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -122,11 +150,11 @@ footer h3 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "sectind1 sectind3"
         "sectind4 sectind2";
-}
+} */
 
 
 /* ********************elementos del main******************** */
-#section_index_1 {
+/* #section_index_1 {
     grid-area: sectind1;
     display: flex;
     flex-direction: column;
@@ -180,10 +208,10 @@ footer h3 {
 
 #section_index_4 div {
     padding: 30px;
-}
+} */
 
 /* ************************Media queries mobile Index***************************/
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     #estructura_grilla_index {
         grid-template-rows: 0.1fr 3fr 3fr 0.1fr;
     }
@@ -244,7 +272,7 @@ footer h3 {
     #section_index_4 div {
         padding: 5px;
     }
-}
+} */
 
 /* ****************************************************************** */
 /* *****************Grilla Historia************************** */
