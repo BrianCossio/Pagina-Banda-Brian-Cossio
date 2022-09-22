@@ -14,7 +14,7 @@
   <title>Document</title>
 </head>
 
-<body id="estructura_grilla_eventos">
+<body id="body_eventos_bootstrap">
 
   <header id="header_historia" class="container-fluid bg-dark bg-gradient">
     <h1 class="display-1 text-warning text-center animate__animated animate__fadeIn">Arctic Monkeys</h1>
@@ -32,20 +32,26 @@
   </header>
 
 
-  <main id="main_eventos">
-    <section id="secttabla">
+  <main id="main_eventos" class="container-fluid d-flex flex-row justify-content-center align-items-center">
+    <section id="secttabla" class="row col-10">
       <!-- **********Tabla de eventos*********************** -->
-      <table class="animate__animated animate__slideInUp">
-        <tr>
-          <td></td>
-          <td id="titulo_tabla">Live Concerts</td>
-          <td></td>
-        </tr>
-        <tr id="primer_fila_titulos">
-          <td>Fecha</td>
-          <td>Evento</td>
-          <td>Ubicación</td>
-        </tr>
+      <table class="table align-middle text-center table-dark table-hover animate__animated animate__fadeInLeft text-warning">
+        <thead>
+          <tr>
+            <td></td>
+            <th scope="col">
+              <h2>Live Concerts</h2>
+            </th>
+            <td></td>
+        </thead>
+        <thead>
+          </tr>
+          <tr id="primer_fila_titulos">
+            <th scope="col">Fecha</th>
+            <th scope="col">Evento</th>
+            <th scope="col">Ubicación</th>
+          </tr>
+        </thead>
         <tr>
           <td>1 de septiembre 2022</td>
           <td>Cala Mijas Festival</td>
@@ -113,13 +119,13 @@
 
 
   <footer id="footer_historia"
-    class="container-fluid bg-dark bg-gradient fondo_footer animate__animated animate__fadeInUp">
+    class="container-fluid bg-dark bg-gradient fondo_footer">
     <section class="row d-flex flex-row justify-content-center align-items-start">
       <div class="col-sm-2 col-md-2 col-lg-2 col-xl-1 col-xxl-1">
         <img src="../assets/images/Icono 2.png" alt="logo">
 
       </div>
-      <div class="text-warning col-sm-10 col-md-10 col-lg-10 col-xl-11 col-xxl-11">
+      <div class="text-warning col-sm-10 col-md-10 col-lg-10 col-xl-11 col-xxl-11 animate__animated animate__fadeIn">
         <h3 class="display-6">Contacto</h3>
         <a href="https://www.facebook.com/ArcticMonkeys">Facebook</a>
         <a href="https://www.instagram.com/arcticmonkeys/">Instagram</a>

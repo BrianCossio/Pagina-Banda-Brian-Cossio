@@ -14,7 +14,7 @@
     <title>Document</title>
 </head>
 
-<body id="estructura_grilla_contactos">
+<body id="body_contactos_bootstrap">
 
     <header id="header_historia" class="container-fluid bg-dark bg-gradient">
         <h1 class="display-1 text-warning text-center animate__animated animate__fadeIn">Arctic Monkeys</h1>
@@ -33,65 +33,60 @@
     </header>
 
 
-    <main id="main_contactos">
-        <section id="sectform">
-            <fieldset class="animate__animated animate__fadeInRight">
-                <h1>Contacto</h1>
-                <form action="" method="post">
-                    <div>
-                        <label for="nombre">Ingrese Nombre</label>
-                        <input type="text" id="nombre" placeholder="Nombre">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="apellido">Ingrese Apellido</label>
-                        <input type="text" id="apellido" placeholder="Apellido">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="mail">Ingrese su email</label>
-                        <input type="email" id="mail" placeholder="ejemplo@gmail.com">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="celular">Ingrese su número Celular</label>
-                        <input type="number" id="celular" placeholder="Ej: 1133445577">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="genero">Género</label>
-                        <select name="Genero" id="">
-                            <option value="GenMasculino">Masculino</option>
-                            <option value="GenFemenino">Femenino</option>
-
-                        </select>
-                    </div>
-                    <br>
-                    <div>
-                        Comentarios:
-                        <br>
-                        <textarea name="coment" id="" cols="30" rows="10"></textarea>
-                    </div>
-
-                    <input id="reset" type="reset" value="Limpiar Formulario">
-                    <input id="enviar" type="submit" value="Enviar">
-
-                </form>
-            </fieldset>
+    <main id="main_contactos" class="container-fluid">
+        <section id="sectform" class="row col-sm-8 col-md-8 col-lg-6 col-xl-4 col-xxl-4 text-warning animate__animated animate__fadeInLeft">
+            <form>
+                <h2 class="p-2">Contacto</h2>
+                <div class="input-group p-3 mb-3">
+                    <span class="input-group-text" id="basic-addon1">Nombre</span>
+                    <input type="text" class="form-control" placeholder="Ingrese Nombre" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group p-3 mb-3">
+                    <span class="input-group-text" id="basic-addon1">Apellido</span>
+                    <input type="text" class="form-control" placeholder="Ingrese Apellido" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group p-3 mb-3">
+                    <span class="input-group-text" id="basic-addon1">Domicilio</span>
+                    <input type="text" class="form-control" placeholder="Ingrese calle y número" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group p-3 mb-3">
+                    <span class="input-group-text" id="basic-addon1">Email</span>
+                    <input type="email" class="form-control" placeholder="email-ejemplo@gmail.com" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group p-3 mb-3">
+                    <span class="input-group-text" id="basic-addon1">Celular</span>
+                    <input type="number" class="form-control" placeholder="1123456978" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="col-4 p-3 mb-3">
+                    <label for="inputState" class="form-label">Género</label>
+                    <select id="inputState" class="form-select">
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                    </select>
+                </div>
+                <div class="p-3 mb-3">
+                    <label for="validationTextarea" class="form-label">Comentarios</label>
+                    <textarea class="form-control" id="Textarea" placeholder="...." style="height: 120px"></textarea>
+                </div>
+                <button type="reset" class="btn btn-primary m-3">Limpiar Formulario</button>
+                <button type="submit" class="btn btn-primary m-3">Enviar</button>
+            </form>
         </section>
-
-
     </main>
 
 
-    <footer id="footer_historia"
-        class="container-fluid bg-dark bg-gradient fondo_footer animate__animated animate__fadeInUp">
+    <footer id="footer_historia" class="container-fluid bg-dark bg-gradient fondo_footer">
         <section class="row d-flex flex-row justify-content-center align-items-start">
             <div class="col-sm-2 col-md-2 col-lg-2 col-xl-1 col-xxl-1">
                 <img src="../assets/images/Icono 2.png" alt="logo">
 
             </div>
-            <div class="text-warning col-sm-10 col-md-10 col-lg-10 col-xl-11 col-xxl-11">
+            <div class="text-warning col-sm-10 col-md-10 col-lg-10 col-xl-11 col-xxl-11 animate__animated animate__fadeIn">
                 <h3 class="display-6">Contacto</h3>
                 <a href="https://www.facebook.com/ArcticMonkeys">Facebook</a>
                 <a href="https://www.instagram.com/arcticmonkeys/">Instagram</a>
