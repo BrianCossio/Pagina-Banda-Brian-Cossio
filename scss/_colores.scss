@@ -1,0 +1,42 @@
+$amarillo: #ffc107;
+$bordo-nav-back: rgb(48, 0, 0);
+$gris-nav-border: #5c5c5c;
+$gris-nav-tabs: #8a8a8a;
+$negro-background: rgba(0, 0, 0, 0.6);
+
+header {
+    nav {
+        .nav-link.active {
+            background-color: $bordo-nav-back !important;
+            border-color: $gris-nav-border !important;
+        }
+
+        .nav-tabs {
+            border-color: $gris-nav-tabs !important;
+        }
+
+        ul {
+            li {
+                a {
+                    color: $amarillo !important;
+                }
+            }
+        }
+    }
+}
+
+main {
+    section {
+        background-color: $negro-background;
+    }
+}
+
+footer {
+    section {
+        div {
+            a {
+                color: $amarillo;
+            }
+        }
+    }
+}
