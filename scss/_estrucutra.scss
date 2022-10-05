@@ -1,17 +1,19 @@
 @import "./variables";
+// *****mixin******
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    @include reset_body;
 }
+
+// *****map-get******
 main {
-    min-height: 100vh !important;
-    padding: $padd-15 !important;
+    min-height: map-get($estilo_fondo, min-height) !important;
+    padding: map-get($estilo_fondo, padding) !important;
     background-image: url("../assets/images/fondo\ 2.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    background-attachment: map-get($estilo_fondo, background-attachment);
+    background-size: map-get($estilo_fondo, background-size);
+    background-position: map-get($estilo_fondo, background-position);
 }
+
 footer {
     section {
         div {

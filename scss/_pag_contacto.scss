@@ -1,9 +1,19 @@
-#sectform {
-    form {
-        button {
-            color: $amarillo;
-            background-color: $bordo-nav-back;
-            border-color: $gris-nav-border;
-        }
-    }
+// #sectform {
+//     form {
+//         button {
+//             color: $amarillo;
+//             background-color: $bordo-nav-back;
+//             border-color: $gris-nav-border;
+//         }
+//     }
+// }
+// ****extend*******
+.btn-primary {
+    color: $amarillo;
+    background-color: $bordo-nav-back;
+    border-color: $gris-nav-border;
+}
+
+.input-group-text {
+    @extend .btn-primary;
 }
