@@ -57,6 +57,9 @@ footer section div a {
   color: #ffc107;
 }
 
+#main_index section {
+  padding-bottom: 15px;
+}
 #main_index section div img {
   padding-bottom: 10px;
 }
