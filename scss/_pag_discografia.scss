@@ -1,5 +1,10 @@
 #main_discografia {
     section {
-        padding: $padd-30;
+        div{
+            img{
+                padding-bottom: $padd-10;
+            }
+        }
+        padding: $padd-15;
     }
 }
