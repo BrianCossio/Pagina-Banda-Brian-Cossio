@@ -64,6 +64,10 @@ footer section div a {
   padding: 10px;
 }
 
+.carousel-inner {
+  max-height: 720px;
+}
+
 #main_historia section div img {
   padding: 10px;
 }
