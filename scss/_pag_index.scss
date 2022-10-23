@@ -1,7 +1,7 @@
 #main_index {
 
     section {
-        padding-bottom: $padd-15;
+        padding-bottom: $padd-45;
 
         div {
             img {
@@ -13,4 +13,8 @@
 
 .carousel-inner {
     max-height: 720px;
+}
+
+.bg-secondary {
+    background-color: $bordo-nav-back !important;
 }

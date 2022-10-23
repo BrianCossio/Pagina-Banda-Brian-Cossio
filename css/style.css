@@ -58,7 +58,7 @@ footer section div a {
 }
 
 #main_index section {
-  padding-bottom: 15px;
+  padding-bottom: 45px;
 }
 #main_index section div img {
   padding-bottom: 10px;
@@ -68,8 +68,21 @@ footer section div a {
   max-height: 720px;
 }
 
+.bg-secondary {
+  background-color: rgb(48, 0, 0) !important;
+}
+
+#main_historia section {
+  padding-bottom: 45px;
+}
 #main_historia section div img {
   padding-bottom: 10px;
+}
+
+.offcanvas-header {
+  padding: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #main_discografia section {

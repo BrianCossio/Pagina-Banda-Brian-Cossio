@@ -1,9 +1,15 @@
-#main_historia{
-    section{
-        div{
-            img{
+#main_historia {
+    section {
+        padding-bottom: $padd-45;
+
+        div {
+            img {
                 padding-bottom: $padd-10;
             }
         }
     }
+}
+.offcanvas-header{
+    padding: 0;
+    justify-content: space-around;
 }
